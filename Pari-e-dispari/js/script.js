@@ -7,7 +7,7 @@
 
 const evenB = document.getElementById("evenB");
 const oddB = document.getElementById("oddB");
-const userNumber = document.getElementById("number");
+const userSelectedNumber = document.getElementById("number");
 
 
 const play = document.getElementById("play")
@@ -26,6 +26,7 @@ oddB.addEventListener("click", function(){
 });
 
 play.addEventListener("click", function(){
+  const userNumber = parseInt(userSelectedNumber.value); //RISOLTO, ho aggiuto il parseint, idea delle 1.35 di notte
   if (userNumber >= 1 && userNumber <= 5){
     console.log("puoi continuare")
   } else {
@@ -33,7 +34,8 @@ play.addEventListener("click", function(){
   }
 })
 
-//Non mi funziona il play, non capisco il perche ma è troppo tardi per pensarci
+
+
 
 
 
